@@ -359,16 +359,16 @@ if(cartItems && dishContainer){
         <tbody class="cartBody">
         <tr>
         <td> ${item.name}</td>
-        <td> ${item.price}</td>
+        <td> ₹${item.price}</td>
         <td> ${item.inCart}</td>
-        <td> ${item.price*item.inCart}</td>
+        <td> ₹${item.price*item.inCart}</td>
         <tr>
         </tbody>
         `
     };
     dishContainer.innerHTML+= `<tr">
     <td colspan="2" class="totalPrice">Total Price</td>
-    <td colspan="2"  class="totalPrice">${cartTotal}</td>
+    <td colspan="2"  class="totalPrice">₹${cartTotal}</td>
     </tr>
     `
 }
