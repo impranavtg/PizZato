@@ -330,11 +330,10 @@ section{
 
 .allSubHeadings{
     text-align: center;
+    position: relative;
     font-size: 3.4rem;
     font-weight: 500;
     color: #252A34;
-    margin: 2rem 35rem;
-    border-bottom: 5px solid #08D9D6;
 }
 .allSubHeadings::after{
     content: "";
@@ -471,6 +470,28 @@ section{
     width: 100%;
 }
 
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000000;
+    background-color:#fbfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.loader.fading{
+    top: 110%;
+    opacity: 0;
+}
+.loader img{
+    width: 60%;
+
+}
+
 
 
 
@@ -589,7 +610,7 @@ section{
 }
 @media(min-width:768px) and (max-width:1024px){
     html{
-        font-size: 60%;
+        font-size: 55%;
     }
     section{
         padding: 6rem 1%;
@@ -652,7 +673,7 @@ section{
 
 @media (min-width:240px) and (max-width:768px){
     html{
-        font-size: 55%;
+        font-size: 50%;
     }
     .container{
         display: flex;

@@ -673,6 +673,10 @@
         <div class="copyright"><p>© 2021 PizZato, DESIGNED BY <a href="#">PRANAV TYAGI</a></p></div>
     </footer>
 
+    <div class="loader">
+        <img src="./image_processing20200416-24394-lw2inn.gif" alt="Loading...">
+    </div>
+
 
 
     <script src="./script.js"></script>
@@ -689,6 +693,14 @@
         `
     };
         }
+
+        function loader(){
+            document.querySelector(".loader").classList.add("fading");
+        }
+        function fade(){
+            setInterval(loader,3000);
+        }
+        window.onload =fade;
     </script>
 </body>
 </html>
