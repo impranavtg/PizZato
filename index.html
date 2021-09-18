@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizZato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./PizZato.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><i class="fas fa-pizza-slice"></i>PizZato</a>
+            <div class="navInfo">
+                <a href="#offers" class="navLinks active">Home</a>
+                <a href="#popular" class="navLinks">Popular</a>
+                <a href="#about" class="navLinks">About</a>
+                <a href="#menu" class="navLinks">Menu</a>
+                <a href="#order" class="navLinks">Order Now</a>
+            </div>
+            <div class="navIcons">
+                <i class="fas fa-bars" id=bar></i>
+                <a href="./cart.html" class="Acart"><i class="fas fa-shopping-cart" id=cart></i><span>0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Popular Starts-->
+
+    <section id="offers" class="offer"> 
+        <div class="container">
+                <div class="slider active">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Spicy Pasta</h3>
+                        <p>The Perfect Pasta Obsessed with Oregano!<br>
+                            Perfect pasta on every fork!
+                        </p>
+                        <a href="#pasta" class="btn">Order Now</a>
+                    </div>
+                    <div class="img">
+                        <img src="Images/pasta.png" alt="food">
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Cheesy Pizza</h3>
+                        <p>Best Pizza, Best Value.<br>
+                            The Right Slice At The Right Price!</p>
+                        <a href="#pizza" class="btn">Order Now</a>
+                    </div>
+                    <div class="img">
+                        <img src="Images/pizza.png" alt="food">
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Burger and Fries</h3>
+                        <p>Burgers: A One-Way Ticket To Happiness!<br>
+                        Burgers From Better To Best.
+                        </p>
+                        <a href="#burger" class="btn">Order Now</a>
+                    </div>
+                    <div class="img">
+                        <img src="Images/burger.png" alt="food">
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Fresh Drinks</h3>
+                        <p>Refreshing Taste On The Go.<br>
+                        Refreshing Taste You’ll Remember!</p>
+                        <a href="#drinks" class="btn">Order Now</a>
+                    </div>
+                    <div class="img">
+                        <img src="Images/juice.png" alt="food">
+                    </div>
+                </div>
+            <div class="navBtns">
+                <div class="navbtn active"></div>
+                <div class="navbtn"></div>
+                <div class="navbtn"></div>
+                <div class="navbtn"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="popular">
+        <div class="menuHead">
+            <h1 class="allHeadings">Our Speciality</h1>
+        </div>
+        <div class="menuContainer">
+            <div class="products">
+                <img src="Images/menu farm fresh pizza.png" alt="pizza">
+                <div class="stars">
+                    <h2>Farm Fresh Pizza</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">
+                    <h2>₹399</h2>
+                    <button class="addCart">Add To Cart</button>
+                </div>
+            </div>
+            <div class="products">
+                <img src="Images/menu sandwich.png" alt="pizza">
+                <div class="stars">
+                    <h2>veg Sandwich</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">
+                    <h2>₹160</h2>
+                    <button class="addCart">Add To Cart</button>
+                </div>
+            </div>
+            <div class="products">
+                <img src="Images/menu pasta.png" alt="pizza">
+                <div class="stars">
+                    <h2>Red Sauce Pasta</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">
+                    <h2>₹199</h2>
+                    <button class="addCart">Add To Cart</button>
+                </div>
+            </div>
+            <div class="products">
+                <img src="Images/menu orange juice.png" alt="pizza">
+                <div class="stars">
+                    <h2>Orange Juice</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">
+                    <h2>₹49</h2>
+                    <button class="addCart">Add To Cart</button>
+                </div>
+            </div>
+            <div class="products">
+                <img src="Images/menu cheese pizza.png" alt="pizza">
+                <div class="stars">
+                    <h2>Margherita</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">
+                    <h2>₹299</h2>
+                    <button class="addCart">Add To Cart</button>
+                </div>
+            </div>
+            <div class="products">
+                <img src="Images/menu fries.png" alt="pizza">
+                <div class="stars">
+                    <h2>Special Fries</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">
+                    <h2>₹65</h2>
+                    <button class="addCart">Add To Cart</button>
+                </div>
+            </div>
+            <div class="products">
+                <img src="Images/menu tandori pizza.png" alt="pizza">
+                <div class="stars">
+                    <h2>Indi Tandoori Pizza</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">
+                    <h2>₹399</h2>
+                    <button class="addCart">Add To Cart</button>
+                </div>
+            </div>
+            <div class="products">
+                <img src="Images/menu veg extravaganza.png" alt="pizza">
+                <div class="stars">
+                    <h2>Veg Extravaganza</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">
+                    <h2>₹450</h2>
+                    <button class="addCart">Add To Cart</button>
+                </div>
+            </div>
+            <div class="products">
+                <img src="Images/menu mojito lemon.png" alt="pizza">
+                <div class="stars">
+                    <h2>Lemon Mojito</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">
+                    <h2>₹79</h2>
+                    <button class="addCart">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Ends-->
+
+
+    <!-- About Starts-->
+    <section id="about">
+        <div class="menuHead">
+            <h1 class="allHeadings">Why Choose Us?</h1>
+        </div>
+        <div class="aboutContainer">
+            <div class="deliveryImg">
+                <img src="Images/about us.png" alt="food delivery image">
+            </div>
+            <div class="deliveryInfo">
+                <h2>Best Food In Town</h2>
+                <p>Welcome to PizZato. PizZato is all about quality you can trust. As one of the original founding Pizza brands, our sole mission is making the freshest, tastiest and funnest Pizza around. Our authentic Italian crust for those who would prefer a light and airy crust to more fully enjoy the toppings. Thin, light and delicious.<br>
+                Enjoy not only Pizzas but a lot more than that.
+             From Pasta to Pizzas and from Burgers to Fries along with the Refreshing Drinks.</p>
+
+                <div class="deliveryIcons">
+                    <div id=div1><i class="fas fa-shipping-fast"></i> <h3>Fast Delivery</h3></div>
+                    <div id=div2><i class="fas fa-map-marked-alt"></i> <h3>Delivery At All Locations</h3></div>
+                    <div id=div3><h3>Pay Online Using</h3> <i class="fab fa-cc-visa"></i> </i> <i class="fab fa-google-pay"></i> <i class="fab fa-amazon-pay"></i> </div>
+                </div>
+                <button><a href="#menu">Order Now</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- About Ends-->
+
+    <!-- Menu Starts-->
+    <section id="menu">
+        <div class="menuHead">
+            <h1 class="allHeadings">Our Menu</h1>
+        </div>
+        <div id="pizza">
+            <h1 class="allSubHeadings">Pizza</h1>
+            <div class="menuContainer">
+                <div class="products">
+                    <img src="Images/menu farm fresh pizza.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Farm Fresh Pizza</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹399</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+                
+                <div class="products">
+                    <img src="Images/menu cheese pizza.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Margherita</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹299</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="Images/menu tandori pizza.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Indi Tandoori Pizza</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹399</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="products">
+                    <img src="Images/menu deluxe veggie pizza.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Deluxe Veggie Pizza</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹499</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="Images/menu italian pizza.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Italian Pizza</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹550</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="Images/menu veg extravaganza.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Veg Extravaganza</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹450</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="Images/menu extra cheese pizza.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Extra Cheese Pizza</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹350</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="Images/menu bellpepper pizza.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Bellpepper Pizza</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹299</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="Images/menu Veggie Paradise.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Veggie Paradise Pizza</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹399</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+
+                </div>
+        </div>
+
+        <div id="burger">
+            <h1 class="allSubHeadings">Burger and Fries</h1>
+
+            <div class="menuContainer burger">
+                <div class="products">
+                    <img src="Images/menu veggie burger.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Veggie Burger</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹59</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+                
+                <div class="products">
+                    <img src="Images/menu maharaja burger.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Maharaja Burger</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹89</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="Images/menu double story burger.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Double Story Burger</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹129</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="products">
+                    <img src="Images/menu french fries.png" alt="pizza">
+                    <div class="stars">
+                        <h2>French Fries</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹49</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="Images/menu fries.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Special Fries</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹65</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="Images/menu cheese burger.png" alt="pizza">
+                    <div class="stars">
+                        <h2>Cheese Burger</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">
+                        <h2>₹79</h2>
+                        <button class="addCart">Add To Cart</button>
+                    </div>
+                </div>
+                </div>
+
+                <div id="pasta">
+                    <h1 class="allSubHeadings">Specials</h1>
+
+                    <div class="menuContainer pastaDrinks">
+                        <div class="products">
+                            <img src="Images/menu pasta.png" alt="pizza">
+                            <div class="stars">
+                                <h2>Red Sauce Pasta</h2>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="price">
+                                <h2>₹199</h2>
+                                <button class="addCart">Add To Cart</button>
+                            </div>
+                        </div>
+                        
+                        <div class="products">
+                            <img src="Images/menu white sauce pasta.png" alt="pizza">
+                            <div class="stars">
+                                <h2>White Sauce Pasta</h2>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price">
+                                <h2>₹199</h2>
+                                <button class="addCart">Add To Cart</button>
+                            </div>
+                        </div>
+        
+                        <div class="products">
+                            <img src="Images/menu sandwich.png" alt="pizza">
+                            <div class="stars">
+                                <h2>Veg Sandwich</h2>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price">
+                                <h2>₹160</h2>
+                                <button class="addCart">Add To Cart</button>
+                            </div>
+                        </div>
+                        </div>
+
+
+                        <div id="drinks">
+                            <h1 class="allSubHeadings">Beverages</h1>
+        
+                            <div class="menuContainer pastaDrinks">
+                                <div class="products">
+                                    <img src="Images/menu mojito lemon.png" alt="pizza">
+                                    <div class="stars">
+                                        <h2>Lemon Mojito</h2>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price">
+                                        <h2>₹79</h2>
+                                        <button class="addCart">Add To Cart</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="products">
+                                    <img src="Images/menu pineapple juice.png" alt="pizza">
+                                    <div class="stars">
+                                        <h2>Pineapple Juice</h2>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        <h2>₹59</h2>
+                                        <button class="addCart">Add To Cart</button>
+                                    </div>
+                                </div>
+                
+                                <div class="products">
+                                    <img src="Images/menu orange juice.png" alt="pizza">
+                                    <div class="stars">
+                                        <h2>Orange Juice</h2>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price">
+                                        <h2>₹49</h2>
+                                        <button class="addCart">Add To Cart</button>
+                                    </div>
+                                </div>
+
+
+                </div>
+
+        </div>
+    </section>
+    <!-- Menu Ends-->
+
+    <!-- Form Starts-->
+    <section id="order">
+        <div class="menuHead">
+            <h1 class="allHeadings">Order Now</h1>
+        </div>
+         <form action="https://submit-form.com/CslCt3MS" method="POST" class="formContainer"> 
+            <input
+    type="hidden"
+    name="_feedback.success.message"
+    value="Click on the link to Go Back"
+  />
+  <input
+  type="hidden"
+  name="_feedback.success.title"
+  value="YAY!! Order Placed"
+/>
+
+            <div><input type="text" placeholder="Enter your Name" name="Name" required>
+            <input type="number" placeholder="Enter your Number" name="Number" required> </div>
+            <input type="email" placeholder="Enter your Email Address" name="Email id" required>
+            <textarea class="sameAsTextarea" name="Address" id="" cols="30" rows="10" placeholder="Your Address" required></textarea>
+            <input name="submit" id="user"  class="sameAsTextarea" onkeydown="return false" >
+            <Button type="submit" class="sendMessage">Place Order <i class="fas fa-angle-double-right"></i> </Button>
+            </form>
+    </section>
+    <!-- Form Ends-->
+
+    <footer>
+        <div class="links_social">
+            <a href="#">FACEBOOK</a>
+            <a href="#">TWITTER</a>
+            <a href="#">INSTAGRAM</a>
+        </div>
+        <div class="copyright"><p>© 2021 PizZato, DESIGNED BY <a href="#">PRANAV TYAGI</a></p></div>
+    </footer>
+
+
+
+    <script src="./script.js"></script>
+    <script>
+        let cart=JSON.parse(localStorage.getItem("cartDish"));
+        let userOrder=document.getElementById("user");
+        if(userOrder && cart){
+            userOrder.innerHTML ='';
+    Object.values(cart).map(item);
+            function item(item){
+        userOrder.value += `
+        ${item.inCart}
+        ${item.name},
+        `
+    };
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- All Images are downloaded from Freepik.com and I do not own these images
+    Regards: Pranav Tyagi -->

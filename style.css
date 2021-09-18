@@ -1,0 +1,980 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1.2rem 5%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0, 0.1);
+}
+a{
+    text-decoration: none;
+}
+nav .logo{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #252A34;
+}
+nav .logo i{
+    color: #FF2E63;
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+}
+nav .navInfo .navLinks{
+    color: #252A34;
+    font-size: 1.6rem;
+    padding: .5rem 1rem;
+}
+nav .navInfo .navLinks:hover{
+    color: #FF2E63;
+    cursor: pointer;
+    transition: 0.2s;
+}
+nav .navInfo .navLinks.active{
+    color: white;
+    background-color: #FF2E63;
+    border-radius: .5rem;
+}
+nav .navIcons i,
+nav .navIcons a i {
+    padding: 1rem;
+    color: #FF2E63;
+    font-size: 2rem;
+    margin-left: 1rem;
+    background-color: #eeeeee;
+    border-radius: 50%;
+}
+
+nav .navIcons i:hover,
+nav .navIcons a i:hover{
+    color: white;
+    background-color:#FF2E63;
+    transform: rotate(360deg);
+    transition: 0.3s;
+}
+.Acart span{
+    font-size: 1.5rem;
+    color: #FF2E63;
+}
+nav .navIcons i#bar{
+    display: none;
+}
+
+
+section{
+    padding: 6rem 4%;
+}
+
+.container{
+    position: relative;
+    display: inline-flex;
+    width: 120rem;
+    height: 50rem;
+}
+.offer .container .slider{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin: 0 2rem;
+    width: 90vw;
+    padding-top: 4rem;
+    background-color: white;
+    clip-path: circle(0.0% at 0 50%);
+}
+
+.offer .container .slider.active{
+    clip-path: circle(102.7% at 23% 25%);
+    transition: 1s;
+    transition-property: clip-path;
+}
+
+.offer .container .slider .content{
+    width: 50%;
+}
+
+.offer .container .slider .img {
+    width: 50%;
+}
+.offer .container .slider .img img{
+    width: 100%;
+    z-index: 1;
+}
+.offer .container .slider .content span{
+    color: #FF2E63;
+    font-size: 3rem;
+}
+
+.offer .container .slider .content h3{
+    color: #252A34;
+    font-size: 6rem;
+}
+.offer .container .slider .content p{
+    color: #08D9D6;
+    font-size: 1.6rem;
+    padding: .5rem;
+    margin-bottom: 1.2rem;
+}
+.offer .container .slider .content .btn{
+    color: white;
+    background-color: #FF2E63;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+}
+.offer .container .slider .content .btn:hover{
+    background-color: #252A34;
+    transition: 0.4s;
+}
+
+.container .navBtns{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.container .navBtns .navbtn{
+    background-color:rgba(0, 0, 0, 0.178);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius:50%;
+    cursor: pointer;
+}
+.container .navBtns .navbtn.active{
+    background-color: #FF2E63;
+}
+
+
+#popular{
+    background-color: #eeeeee;
+}
+.allHeadings{
+    color: #252A34;
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 5px solid #FF2E63;
+}
+
+.menuContainer{
+    display: grid;
+    grid-template-rows: repeat(3,360px);
+    grid-template-columns: repeat(3,340px);
+    grid-gap: 20px;
+    padding: 0 5%;
+    margin: 5rem 0;
+}
+.menuContainer .products{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.38);
+-webkit-box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.38);
+-moz-box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.38);
+}
+
+.menuContainer .products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.menuContainer .products img{
+    width: 90%;
+}
+.menuContainer .products .stars{
+    text-align: center;
+}
+.menuContainer .products .stars h2{
+    color: #252A34;
+    font-size: 2rem;
+}
+.menuContainer .products .stars i{
+    font-size: 1.8rem;
+    color: #FF2E63;
+}
+.menuContainer .products .price{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menuContainer .products .price h2{
+    color: #FF2E63;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.menuContainer .products .price button{
+    padding: .5rem 2rem;
+    color: white;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #252A34;
+}
+.menuContainer .products .price button:hover{
+    background-color: #FF2E63;
+    padding: .5rem 2.5rem;
+    transition: ease-in-out;
+    cursor: pointer;
+}
+
+
+
+
+#about .aboutContainer{
+    display: flex;
+}
+#about .aboutContainer .deliveryImg{
+    width: 50%;
+}
+#about .aboutContainer .deliveryImg img{
+    width: 100%;
+}
+
+#about .aboutContainer .deliveryInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#about .aboutContainer .deliveryInfo h2{
+    color: #252A34;
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+#about .aboutContainer .deliveryInfo p{
+    color: #08D9D6;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+#about .aboutContainer .deliveryInfo button{
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #252A34;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#about .aboutContainer .deliveryInfo button a{
+    text-decoration: none;
+    color: white;
+}
+#about .aboutContainer .deliveryInfo button:hover{
+    padding: 1rem 3.5rem;
+    background-color: #FF2E63;
+    transition: 0.5s;
+    transition: ease-in-out;
+}
+
+#about .aboutContainer .deliveryInfo .deliveryIcons{
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns:repeat(2, 1fr) ;
+    grid-gap: 10px;
+    text-align: center;
+}
+#about .aboutContainer .deliveryInfo .deliveryIcons div{
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    font-size: 2rem;
+    color: #FF2E63;
+}
+#about .aboutContainer .deliveryInfo .deliveryIcons div h3{
+    display: inline-flex;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #252A34;
+}
+#about .aboutContainer .deliveryInfo .deliveryIcons #div3{
+    grid-column: 1/-1;
+}
+
+
+#menu{
+    background-color: #eeeeee;
+}
+
+.allSubHeadings{
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 500;
+    color: #252A34;
+    margin: 2rem 35rem;
+    border-bottom: 5px solid #08D9D6;
+}
+.menuContainer.burger{
+    grid-template-rows: repeat(2,360px);
+}
+
+.menuContainer.pastaDrinks{
+    grid-template-rows: repeat(1,360px);
+}
+
+
+
+
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.formContainer div{
+    display: flex;
+}
+
+.formContainer input{
+    border: 1px solid rgb(170, 170, 170);
+    outline: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+   
+}
+.formContainer div input{
+    width: 350px;
+    margin: 0px 30px 40px 0px;
+}
+.formContainer div input:focus{
+    border: 1px solid #FF2E63;
+}
+.formContainer input[type="email"]{
+    border: 1px solid rgb(170, 170, 170);
+    outline: none;
+    width: 730px;
+    margin-left: -30px;
+    margin-bottom: 40px;
+}
+.formContainer input[type="email"]:focus{
+    border: 1px solid #FF2E63;
+}
+.formContainer .sameAsTextarea{
+    border: 1px solid rgb(170, 170, 170);
+    outline: none;
+    width: 730px;
+    height: 200px;
+    margin-left: -30px;
+    padding: 10px;
+    font-size: 1.6rem;
+    resize: none;
+    margin-bottom: 20px;
+}
+.formContainer .sameAsTextarea:focus{
+    border: 1px solid #FF2E63;
+}
+.formContainer .sameAsTextarea{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 730px;
+    height: auto;
+}
+.sendMessage{
+    padding: 10px 30px;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #FF2E63;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.sendMessage:hover{
+    background-color: #252A34;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #252A34;
+}
+
+.links_social{
+    display: flex;
+}
+.links_social a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+   
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.links_social a:hover{
+    color: #FF2E63;
+    transition-duration: 0.2s;
+}
+.copyright p{
+    color:#767777;
+    font-size: 1.4rem;
+    font-weight: 500;
+   
+}
+.copyright p a{
+    text-decoration: none;
+    color: #FF2E63;
+}
+.copyright p a:hover{
+    color: #08D9D6;
+    transition-duration: 0.2s;
+}
+section{
+    margin: 0px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:1025px){
+    section{
+        padding: 6rem 2%;
+    }
+    .container{
+        width: 100%;
+    }
+    .menuContainer{
+        padding: 0 ;
+        grid-template-rows: repeat(3,360px);
+        grid-template-columns: repeat(3,320px);
+    }
+    .menuContainer.burger{
+        grid-template-rows: repeat(2, 360px);
+        grid-template-columns: repeat(3, 320px);
+    }
+    .menuContainer.pastaDrinks{
+        grid-template-rows: repeat(1, 360px);
+        grid-template-columns: repeat(3, 320px);
+    }
+}
+@media(min-width:1200px){
+    section{
+        padding: 6rem 8%;
+    }
+    .menuContainer{
+        padding: 0 ;
+        grid-template-rows: repeat(3,360px);
+        grid-template-columns: repeat(3,340px);
+    }
+    .menuContainer.burger{
+        grid-template-rows: repeat(2, 360px);
+        grid-template-columns: repeat(3, 340px);
+    }
+    .menuContainer.pastaDrinks{
+        grid-template-rows: repeat(1, 360px);
+        grid-template-columns: repeat(3, 340px);
+    }
+}
+@media(min-width:1400px){
+    section{
+        padding: 6rem 2%;
+    }
+    .container .slider .content{
+        width: 70%;
+    }
+    .container .slider .img{
+        width: 30%;
+    }
+    .menuContainer{
+        grid-template-rows: repeat(3,340px);
+        grid-template-columns: repeat(4,320px);
+    }
+    .menuContainer.burger{
+        grid-template-rows: repeat(2, 340px);
+        grid-template-columns: repeat(4, 320px);
+    }
+    .menuContainer.pastaDrinks{
+        grid-template-rows: repeat(1, 340px);
+        grid-template-columns: repeat(3, 320px);
+    }
+}
+
+@media(min-width:1700px){
+    html{
+        font-size: 70%;
+    }
+    .container{
+        height: 80rem;
+    }
+    .container .slider .content{
+        width: 80%;
+    }
+    .container .slider .img{
+        width: 20%;
+    }
+    .menuContainer{
+        grid-template-rows: repeat(2,340px);
+        grid-template-columns: repeat(5,320px);
+    }
+    .menuContainer.burger{
+        grid-template-rows: repeat(2, 340px);
+        grid-template-columns: repeat(5, 320px);
+    }
+    .menuContainer.pastaDrinks{
+        grid-template-rows: repeat(1, 340px);
+        grid-template-columns: repeat(3, 320px);
+    }
+}
+@media(min-width:768px) and (max-width:1024px){
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 6rem 1%;
+    }
+    .container{
+        width: 100%;
+        height: 50rem;
+    }
+    #about .aboutContainer .deliveryInfo .deliveryIcons div h3{
+      font-size: 1.3rem;
+    }
+    .menuContainer{
+        grid-template-rows: repeat(5,360px);
+        grid-template-columns: repeat(2,340px);
+    }
+    .menuContainer.burger{
+        grid-template-rows: repeat(3, 360px);
+        grid-template-columns: repeat(2, 340px);
+    }
+    .menuContainer.pastaDrinks{
+        grid-template-rows: repeat(2, 360px);
+        grid-template-columns: repeat(2, 340px);
+    }
+
+    .formContainer div input{
+        width: 320px;
+        margin: 0px 30px 40px 0px;
+    }
+    .formContainer input[type="email"]{
+        width: 670px;
+        margin-left: -30px;
+    }
+    .formContainer .sameAsTextarea{
+            width: 670px;
+            margin-left: -30px;
+    }
+    
+    
+}
+
+
+@media(min-width:820px) and (max-width:910px){
+    section{
+        padding: 6rem 2%;
+    }
+    .menuContainer{
+        grid-template-rows: repeat(5,360px);
+        grid-template-columns: repeat(2,360px);
+    }
+}
+
+@media(min-width:910px) and (max-width:1024px){
+    section{
+        padding: 6rem 6%;
+    }
+}
+
+
+
+
+@media (min-width:240px) and (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70rem;
+    }
+    .container .navBtns{
+        bottom: 2px;
+    }
+    .offer .container .slider .content{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .offer .container .slider .img {
+        margin-left: 10%;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    #about .aboutContainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #about .aboutContainer  .deliveryInfo{
+        width: 100%;
+    }
+    #about .aboutContainer .deliveryImg{
+        width: 100%;
+    }
+    #about .aboutContainer .deliveryInfo .deliveryIcons div h3{
+      font-size: 1.2rem;
+    }
+    #about .aboutContainer .deliveryInfo .deliveryIcons{
+        grid-template-rows: repeat(2, 45px);
+        grid-template-columns:repeat(2, 1fr) ;
+    }
+    .allSubHeadings{
+        margin: 0;
+    }
+    .menuContainer{
+        grid-template-rows: repeat(9,320px);
+        grid-template-columns: repeat(1,300px);
+    }
+    .menuContainer.burger{
+        grid-template-rows: repeat(6, 320px);
+        grid-template-columns: repeat(1, 300px);
+    }
+    .menuContainer.pastaDrinks{
+        grid-template-rows: repeat(3, 320px);
+        grid-template-columns: repeat(1, 300px);
+    }
+    .formContainer div{
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .formContainer div input{
+       width: 320px;
+        margin-left: 20px;
+    }
+    .formContainer input[type="email"]{
+        width: 320px;
+        margin-left: -10px;
+    }
+    .formContainer .sameAsTextarea{
+            width: 320px;
+            margin-left: -10px;
+    }
+    
+    .links_social a{
+        font-size: 12px;
+    }
+    .copyright p{
+        padding: 0px 20px;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+@media(max-width:600px){
+    nav{
+        padding: 1rem 2rem;
+    } 
+    nav .navIcons i#bar{
+        display: inline-block;
+    }
+    nav .navInfo{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: .5rem 0;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    nav .navInfo.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+        z-index: 100000;
+    }
+    nav .navInfo .navLinks{
+        display: block;
+        padding: 1rem;
+        background-color: #eeeeee;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:920px) and (max-width:1024px){
+    .formContainer div{
+        display: flex;
+        flex-direction: column;
+    }
+    .formContainer div{
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formContainer div input{
+       width: 320px;
+        margin-left: 20px;
+    }
+    .formContainer input[type="email"]{
+        width: 320px;
+        margin-left: -10px;
+    }
+    .formContainer .sameAsTextarea{
+            width: 320px;
+            margin-left: -10px;
+    }
+    
+    .links_social a{
+        font-size: 12px;
+    }
+    .copyright p{
+        padding: 0px 20px;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
+
+
+
+@media(min-width:400px) and (max-width:500px){
+    .menuContainer{
+        grid-template-rows: repeat(9,340px);
+        grid-template-columns: repeat(1,340px);
+    }
+    .menuContainer.burger{
+        grid-template-rows: repeat(6, 340px);
+        grid-template-columns: repeat(1, 340px);
+    }
+    .menuContainer.pastaDrinks{
+        grid-template-rows: repeat(3, 340px);
+        grid-template-columns: repeat(1, 340px);
+    }
+    .formContainer div input{
+        width: 370px;
+     }
+     .formContainer input[type="email"]{
+         width: 370px;
+     }
+     .formContainer .sameAsTextarea{
+             width: 370px;
+     }
+}
+@media(min-width:500px) and (max-width:600px){
+    .menuContainer{
+        grid-template-rows: repeat(9,360px);
+        grid-template-columns: repeat(1,360px);
+    }
+    .menuContainer.burger{
+        grid-template-rows: repeat(6, 360px);
+        grid-template-columns: repeat(1, 360px);
+    }
+    .menuContainer.pastaDrinks{
+        grid-template-rows: repeat(3, 360px);
+        grid-template-columns: repeat(1, 360px);
+    }
+
+    .formContainer div input{
+        width: 400px;
+     }
+     .formContainer input[type="email"]{
+         width: 400px;
+     }
+     .formContainer .sameAsTextarea{
+             width: 400px;
+     }
+}
+@media(min-width:600px) and (max-width:768px){
+    .offer .container .slider .img {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .menuContainer{
+        grid-template-rows: repeat(5,320px);
+        grid-template-columns: repeat(2,260px);
+    }
+    .menuContainer.burger{
+        grid-template-rows: repeat(3, 320px);
+        grid-template-columns: repeat(2, 260px);
+    }
+    .menuContainer.pastaDrinks{
+        grid-template-rows: repeat(2, 320px);
+        grid-template-columns: repeat(2, 260px);
+    }
+
+
+    .formContainer div input{
+        width: 500px;
+     }
+     .formContainer input[type="email"]{
+         width: 500px;
+     }
+     .formContainer .sameAsTextarea{
+             width:500px;
+     }
+}
+
+
+@media(max-width:360px){
+    html{
+        font-size: 40%;
+    }
+    .menuContainer{
+        grid-template-rows: repeat(9,280px);
+        grid-template-columns: repeat(1,220px);
+    }
+    .menuContainer.burger{
+        grid-template-rows: repeat(6, 280px);
+        grid-template-columns: repeat(1, 220px);
+    }
+    .menuContainer.pastaDrinks{
+        grid-template-rows: repeat(3, 280px);
+        grid-template-columns: repeat(1, 220px);
+    }
+    .formContainer div{
+        display: flex;
+        flex-direction: column;
+    }
+    .formContainer div{
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formContainer div input{
+       width: 250px;
+        margin-left: 20px;
+    }
+    .formContainer input[type="email"]{
+        width: 250px;
+        margin-left: -10px;
+    }
+    .formContainer .sameAsTextarea{
+            width: 250px;
+            margin-left: -10px;
+    }
+    
+    .links_social a{
+        font-size: 10px;
+    }
+    .copyright p{
+        padding: 0px 10px;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width:240px){
+    .formContainer div input{
+        width: 210px;
+         margin-left: 20px;
+     }
+     .formContainer input[type="email"]{
+         width: 210px;
+         margin-left: -10px;
+     }
+     .formContainer .sameAsTextarea{
+             width: 210px;
+             margin-left: -10px;
+     }
+     
+     .links_social a{
+         font-size: 8px;
+         margin-left: 5px;
+     }
+     .copyright p{
+         padding: 0px 10px;
+         font-size: 10px;
+         line-height: 20px;
+         text-align: center;
+     }
+}
