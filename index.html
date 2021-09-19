@@ -643,17 +643,11 @@
             <h1 class="allHeadings">Order Now</h1>
         </div>
          <form action="https://submit-form.com/CslCt3MS" method="POST" class="formContainer"> 
-            <input
+<input
     type="hidden"
-    name="_feedback.success.message"
-    value="Click on the link to Go Back"
+    name="_redirect"
+    value="https://impranavtg.github.io/PizZato/"
   />
-  <input type="hidden" name="_append" value="false" />
-  <input
-  type="hidden"
-  name="_feedback.success.title"
-  value="YAY!! Order Placed"
-/>
 
             <div><input type="text" placeholder="Enter your Name" name="Name" required>
             <input type="number" placeholder="Enter your Number" name="Number" required> </div>
@@ -678,8 +672,6 @@
         <img src="./image_processing20200416-24394-lw2inn.gif" alt="Loading...">
     </div>
 
-
-
     <script src="./script.js"></script>
     <script>
         let cart=JSON.parse(localStorage.getItem("cartDish"));
@@ -703,6 +695,7 @@
         }
         window.onload =fade;
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
 

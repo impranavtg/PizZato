@@ -336,9 +336,20 @@ orderForm.addEventListener('submit', function checkCart(event){
     let itemsInCart= localStorage.getItem("cartNumber");
     if(itemsInCart){
 localStorage.clear();
+swal({
+    title: "YAY!! Order Placed",
+    text: "Your food is being prepared",
+    icon: "success",
+    button: "Okay",
+  });
 }
 else{
-    alert("Your Cart is Empty!!");
+    swal({
+        title: "OOPS! Your Cart is Empty",
+        text: "Add items in your cart",
+        icon: "error",
+        button: "Okay",
+      });
     event.preventDefault();
 }
 })
