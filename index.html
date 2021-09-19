@@ -648,11 +648,7 @@
     name="_feedback.success.message"
     value="Click on the link to Go Back"
   />
-  <input
-    type="hidden"
-    name="_redirect"
-    value="https://impranavtg.github.io/PizZato.github.io/"
-  />
+  <input type="hidden" name="_append" value="false" />
   <input
   type="hidden"
   name="_feedback.success.title"
@@ -663,7 +659,7 @@
             <input type="number" placeholder="Enter your Number" name="Number" required> </div>
             <input type="email" placeholder="Enter your Email Address" name="Email id" required>
             <textarea class="sameAsTextarea" name="Address" id="" cols="30" rows="10" placeholder="Your Address" required></textarea>
-            <input name="submit" id="user"  class="sameAsTextarea" onkeydown="return false" >
+            <input name="submit" id="user"  class="sameAsTextarea" readonly>
             <Button type="submit" class="sendMessage">Place Order <i class="fas fa-angle-double-right"></i> </Button>
             </form>
     </section>
@@ -694,7 +690,7 @@
             function item(item){
         userOrder.value += `
         ${item.inCart}
-        ${item.name},
+        ${item.name}
         `
     };
         }
